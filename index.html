@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Palace Hotel</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./top-palace-hotel/img 001.webp"
+        alt="hotel logo"
+        width="300"
+        height="200"
+      />
+      <h1>Welcome to Top Palace Hotel</h1>
+      <p><i>Experience Royal Comfort and Luxury...</i></p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2><u>About Us</u></h2>
+      <p>
+        At Top Palace Hotel, we combine modern luxury with royal elegance to
+        create unforgettable stays. Located in the heart of the city, we are
+        your destination for relaxation, comfort, and exceptional service.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2><u>Our Services</u></h2>
+      <div>
+        <div>
+          <img
+            src="./top-palace-hotel/dinnig image.jpg"
+            alt="Fine Dining"
+            width="300"
+            height="200"
+          />
+          <h3>Fine Dining</h3>
+          <p>Experience world-class cuisine prepared by top chefs.</p>
+        </div>
+        <div>
+          <img
+            src="./top-palace-hotel/spa image.jpg"
+            alt="Spa and Wellness"
+            width="300"
+            height="200"
+          />
+          <h3>Spa & Wellness</h3>
+          <p>Relax and rejuvenate with our luxurious spa treatments.</p>
+        </div>
+        <div>
+          <img
+            src="./top-palace-hotel/conference room.jpg"
+            alt="Conference Rooms"
+            width="300"
+            height="200"
+          />
+          <h3>Conference Rooms</h3>
+          <p>Host your meetings in our state-of-the-art facilities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+      <h2><u>Our Rooms</u></h2>
+      <div>
+        <div>
+          <img
+            src="./top-palace-hotel/deluxe suite.jpg"
+            alt="Deluxe Room"
+            width="300"
+            height="200"
+          />
+          <h3><i>Deluxe Room</i></h3>
+          <p>Spacious room with a king-size bed and city view.</p>
+        </div>
+        <div>
+          <img
+            src="./top-palace-hotel/luxury suite.jpg"
+            alt="Suite"
+            width="300"
+            height="200"
+          />
+          <h3><i>Luxury Suite</i></h3>
+          <p>Experience luxury in our beautifully designed suites.</p>
+        </div>
+        <div>
+          <img
+            src="./top-palace-hotel/single room.jpg"
+            alt="Single Room"
+            width="300"
+            height="200"
+          />
+          <h3><i>Single Room</i></h3>
+          <p>Perfect for solo travelers looking for comfort and value.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Form section -->
+    <form action="https://httpbin.org/post" method="post">
+      <fieldset>
+        <legend>
+          <h3>Customers Information</h3>
+        </legend>
+        <h4>Personal information</h4>
+        <label for="fname">First Name:</label>
+        <input
+          type="text"
+          placeholder="First name"
+          name="fname"
+          id="fname" 
+          required
+        /><br />
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last name"
+          required
+        /><br />
+        <label for="email"
+          >Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            required /></label
+        ><br />
+        <label for="telephone"
+          >Contact number:
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            placeholder="123-4567-8901" maxlength="13"
+            required
+          /> </label
+        ><br />
+        <label for="date"
+          >Date of arrival
+          <input type="date" name="date" id="date" required /></label
+        ><br />
+        <label for="number"
+          >Number of rooms
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="0"
+            max="24"
+            required
+        /></label>
+        <p>Select your preferred room</p>
+        <label for="deluxe"
+          ><input
+            type="radio"
+            id="deluxe"
+            name="room"
+            value="Deluxe room"
+          />Deluxe room</label
+        ><br />
+        <label for="single"
+          ><input
+            type="radio"
+            id="single"
+            name="room"
+            value="Single room"
+          />Single room</label
+        ><br />
+        <label for="luxury"
+          ><input
+            type="radio"
+            id="luxury"
+            name="room"
+            value="Luxury suite"
+          />Luxury suite</label
+        >
+        <p><b>Services needed</b></p>
+        <input type="checkbox" name="lodging" id="lodging" value="lodging" />
+        <label for="lodging">Lodging</label><br />
+        <input
+          type="checkbox"
+          name="meetings"
+          id="meetings"
+          value="conference meetings"
+        />
+        <label for="meetings">Conference meetings</label><br />
+        <input
+          type="checkbox"
+          name="kitchen"
+          id="kitchen"
+          value="kitchen services"
+        /><label for="kitchen">Kitchen sevices</label><br />
+        <input type="checkbox" name="spa" id="spa" value="spa" /><label
+          for="spa"
+          >Spa</label
+        ><br />
+        <h4>Marital Status</h4>
+        <select name="marital-status" id="marital-id">
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option></select
+        ><br />
+        <h4>Comment Section</h4>
+        <textarea
+          name="comment"
+          id="comment"
+          rows="5"
+          cols="30"
+          placeholder="comment"
+        ></textarea
+        ><br />
+        <input type="submit" value="Submit" onclick="alert('Thanks for submitting')" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2><u>Contact us</u></h2>
+      <p>
+        If you have any questions or would like to make a reservation, please
+        get in touch!
+      </p>
+      <ul>
+        <li><strong>Email:</strong> contact@toppalacehotel.com</li>
+        <li><strong>Phone:</strong> +123 456 7890</li>
+        <li><strong>Address:</strong> 123 Royal Street, Cityville</li>
+      </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Top Palace Hotel. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
